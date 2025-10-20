@@ -140,7 +140,7 @@ body {
   .topbanner {
     flex-direction: column;
     height: auto;
-    padding: 1rem 0 0.8 0;
+    padding: 1rem 0 0.8;
     align-items: center;
   }
   .badge-box {
