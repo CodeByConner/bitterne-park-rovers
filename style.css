@@ -162,7 +162,7 @@ body {
     flex-direction: column;
   }
   .underline {
-    width: 65%;
+    width: 80%;
     height: 2px;
     background-color:#968446;
     margin: 0.3rem auto;
