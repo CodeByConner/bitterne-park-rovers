@@ -1,35 +1,85 @@
 @font-face {
-    font-family: PlusJakarta;
-    src: url(PlusJakartaSans-VariableFont_wght.ttf);
+  font-family: PlusJakarta;
+  src: url(PlusJakartaSans-VariableFont_wght.ttf);
 }
 html {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
+
 /* Top Banner (Top Banner) */
 .topbanner {
-    background-color: #133f1c;
-    padding: 10px 20px;
+  background-color: #133f1c;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: white;
 }
-.logo {
-    width: 70px;
-    height: auto;
+
+/* Badge Fixed to the left*/
+.badge-box {
+  position: absolute;
+  left: 25px;
+  top: 50%;
+  transform: translateY(-50%);
 }
-.topbanner h1{
-    font-family: PlusJakarta;
-    font-size: 40px;
-    text-shadow: 0 3px 0 #968446, /*Crisp Gold Edge*/ 0 4px 10px rgba(0,0,0,0.25), /*Dark Depth Behind it*/ 0 2px 6px rgba(150,132,70,0.6);
-    font-weight:800px;
-    margin-top: 1px;
-    margin-bottom: 5px;
-    letter-spacing: 5px;
-    color: white;
-    text-transform: uppercase;
+
+.badge {
+  width: 70px;
+  height: auto;
 }
-.topbanner h6{
-    font-family: PlusJakarta;
-    margin-top: 1px;
-    color: white;
-    margin-bottom: 1px;
+
+/* Text Block */
+.title-box {text-align: center;
+}
+
+/* Main Title */
+.title-box h1 {
+  font-family: PlusJakarta;
+  font-size: 2.3rem;
+  text-shadow: 0 3px 0 #968446,
+    /*Crisp Gold Edge*/ 0 4px 10px rgba(0, 0, 0, 0.25),
+    /*Dark Depth Behind it*/ 0 2px 6px rgba(150, 132, 70, 0.6);
+  font-weight: 800px;
+  margin: 0;
+  letter-spacing: 2px;
+  color: white;
+  text-transform: uppercase;
+}
+
+/* EST.2026 */
+.title-box h6 {
+  font-family: PlusJakarta;
+  color: white;
+  font-weight: 400;
+  opacity: 0.85;
+  font-size: 0.95rem;
+  margin-top: -6px;
+  line-height: 1;
+  position: relative;
+  top: -2px;
+}
+
+/* Gold Underline Under EST.2026 */
+.underline {
+  width: 475px;
+  height: 2px;
+  background-color: #968446;
+  margin: 0 auto 10px;
+  border-radius: 2px;
+}
+body {
+  background: rgb(255, 255, 255);
+  text-align: center;
+}
+h2 {
+  color: rgb(0, 0, 0);
+}
+button {
+  background-color: rgb(54, 54, 238);
+  color: white;
+  border-radius: 10px;
 }
