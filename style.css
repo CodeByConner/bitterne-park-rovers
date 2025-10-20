@@ -27,18 +27,29 @@ html {
   align-items: flex-start;
   justify-content: space-between;
   position: relative;
-  color: white;
+  color: #fff;
   flex-direction: column;
   height: 160px;
   overflow: hidden;
+}
+.topbanner ::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0 0;
+  height: 44px;
+  background: linear-gradient(to bottom rgba(0, 0, 0, 0), var(--dark-green)
+  );
+  z-index: 1;
+  pointer-events: none;
 }
 
 /* Badge Fixed to the left*/
 .badge-box {
   position: absolute;
-  left: 40px;
-  top: 44%;
+  left: 35px;
+  top: 50%;
   transform: translateY(-50%);
+  z-index: 2;
 }
 
 .badge {
@@ -53,6 +64,7 @@ html {
   text-align: center;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 2;
 }
 
 /* Main Title */
@@ -65,6 +77,16 @@ html {
   color: white;
   text-transform: uppercase;
   padding: 0;
+}
+
+/* Gold Underline Title */
+.underline {
+  width: 475px;
+  height: 2px;
+  background-color: #968446;
+  margin: 0.35 auto 0.25rem;
+  border-radius: 2px;
+  opacity: 0.8;
 }
 
 /* EST.2026 */
@@ -80,27 +102,18 @@ html {
   top: -2px;
 }
 
-/* Gold Underline Title */
-.underline {
-  width: 475px;
-  height: 2px;
-  background-color: #968446;
-  margin: 0.35 auto 0.25rem;
-  border-radius: 2px;
-  opacity: 0.8;
-}
-
 /* Nav Menu */
 .nav-menu {
   display: flex;
   justify-content: center;
   gap: 2rem;
   margin-top: auto;
-  background-color: #133f1c;
+  background: transparent;
   bottom: 0;
   position: absolute;
   left: 0;
   width: 100%;
+  z-index: 3;
 }
 
 .nav-menu a {
@@ -111,11 +124,12 @@ html {
   font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 1px;
-  transition: color 0.25s ease;
+  transition: color 0.25s ease, text-shadow 0.25s ease;
 }
 
 .nav-menu a:hover {
-  color: #968446;
+  color: var(--gold);
+  text-shadow: 0 0 8px rgba(150, 132, 70, 0.6);
 }
 body {
   background: rgb(255, 255, 255);
