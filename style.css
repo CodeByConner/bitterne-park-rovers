@@ -1,13 +1,14 @@
 @font-face {
   font-family: PlusJakarta;
   src: url(PlusJakartaSans-VariableFont_wght.ttf);
+}
 
   :root {
     --light-green: #2a654f;
     --dark-green: #133f1c;
     --gold: #968446;
   }
-}
+
 html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -16,7 +17,12 @@ html {
 
 /* Top Banner (Top Banner) */
 .topbanner {
-  background-color: #2a654f;
+  background: linear-gradient(
+    to bottom,
+    var(--light-green) 0%,
+    var(--light-green) 65%,
+    var(--dark-green) 100%
+  );
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -24,24 +30,29 @@ html {
   color: white;
   flex-direction: column;
   height: 160px;
+  overflow: hidden;
 }
 
 /* Badge Fixed to the left*/
 .badge-box {
   position: absolute;
-  left: 25px;
-  top: 50%;
+  left: 40px;
+  top: 44%;
   transform: translateY(-50%);
 }
 
 .badge {
-  width: 100px;
+  width: 95px;
   height: auto;
 }
 
 /* Text Block */
-.title-box {text-align: center;
-  width: 100%;
+.title-box {
+  position: absolute;
+  top: 53%;
+  text-align: center;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* Main Title */
@@ -53,6 +64,7 @@ html {
   letter-spacing: 2px;
   color: white;
   text-transform: uppercase;
+  padding: 0;
 }
 
 /* EST.2026 */
@@ -73,10 +85,9 @@ html {
   width: 475px;
   height: 2px;
   background-color: #968446;
-  margin: 0.05rem auto;
+  margin: 0.35 auto 0.25rem;
   border-radius: 2px;
-  opacity: 0.75;
-
+  opacity: 0.8;
 }
 
 /* Nav Menu */
@@ -90,7 +101,6 @@ html {
   position: absolute;
   left: 0;
   width: 100%;
-
 }
 
 .nav-menu a {
@@ -110,12 +120,4 @@ html {
 body {
   background: rgb(255, 255, 255);
   text-align: center;
-}
-h2 {
-  color: rgb(0, 0, 0);
-}
-button {
-  background-color: rgb(54, 54, 238);
-  color: white;
-  border-radius: 10px;
 }
