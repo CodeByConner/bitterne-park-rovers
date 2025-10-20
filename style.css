@@ -1,4 +1,35 @@
 @font-face {
-    font-family: 'Permanent Marker' ;
-    src: url(PermanentMarker-Regular.ttf);
+    font-family: PlusJakarta;
+    src: url(PlusJakartaSans-VariableFont_wght.ttf);
+}
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+/* Top Banner (Top Banner) */
+.topbanner {
+    background-color: #133f1c;
+    padding: 10px 20px;
+}
+.logo {
+    width: 70px;
+    height: auto;
+}
+.topbanner h1{
+    font-family: PlusJakarta;
+    font-size: 40px;
+    text-shadow: 0 3px 0 #968446, /*Crisp Gold Edge*/ 0 4px 10px rgba(0,0,0,0.25), /*Dark Depth Behind it*/ 0 2px 6px rgba(150,132,70,0.6);
+    font-weight:800px;
+    margin-top: 1px;
+    margin-bottom: 5px;
+    letter-spacing: 5px;
+    color: white;
+    text-transform: uppercase;
+}
+.topbanner h6{
+    font-family: PlusJakarta;
+    margin-top: 1px;
+    color: white;
+    margin-bottom: 1px;
 }
