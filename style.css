@@ -3,11 +3,11 @@
   src: url(PlusJakartaSans-VariableFont_wght.ttf);
 }
 
-  :root {
-    --light-green: #2a654f;
-    --dark-green: #133f1c;
-    --gold: #968446;
-  }
+:root {
+  --light-green: #2a654f;
+  --dark-green: #133f1c;
+  --gold: #968446;
+}
 
 html {
   -webkit-font-smoothing: antialiased;
@@ -37,8 +37,7 @@ html {
   position: absolute;
   inset: auto 0 0 0;
   height: 44px;
-  background: linear-gradient(to bottom rgba(0, 0, 0, 0), var(--dark-green)
-  );
+  background: linear-gradient(to bottom rgba(0, 0, 0, 0), var(--dark-green));
   z-index: 1;
   pointer-events: none;
 }
@@ -134,4 +133,38 @@ html {
 body {
   background: rgb(255, 255, 255);
   text-align: center;
+}
+
+/* This is for Mobile/Tablet devices*/
+@media (max-width: 768px) {
+  .topbanner {
+    flex-direction: column;
+    height: auto;
+    padding-bottom: 0;
+    text-align: center;
+  }
+  .badge-box {
+    position: relative;
+    left: 0;
+    top: 0;
+    transform: none;
+    margin: auto 10px;
+  }
+  .title-box {
+    position: relative;
+    left: 0;
+    top: 0;
+    transform: none;
+    margin-bottom: 10px;
+  }
+  .nav-menu {
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 10px 0;
+  }
+  .nav-menu a {
+    font-size: 0.9rem;
+  }
 }
