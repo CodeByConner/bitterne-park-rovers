@@ -140,22 +140,22 @@ body {
   .topbanner {
     flex-direction: column;
     height: auto;
-    padding-bottom: 0;
-    text-align: center;
+    padding: 1rem 0 0.8 0;
+    align-items: center;
   }
   .badge-box {
     position: relative;
     left: 0;
     top: 0;
     transform: none;
-    margin: auto 10px;
+   margin-bottom: 0.6rem;
   }
   .title-box {
     position: relative;
     left: 0;
     top: 0;
     transform: none;
-    margin-bottom: 10px;
+    margin-bottom: 0.6rem;
   }
   .nav-menu {
     position: relative;
@@ -166,5 +166,14 @@ body {
   }
   .nav-menu a {
     font-size: 0.9rem;
+  }
+  .badge {
+    width: 85px;
+  }
+  .title-box h1 {
+    font-size: 1.5rem;
+  }
+  .title-box h6 {
+    font-size: 0.8rem;
   }
 }
