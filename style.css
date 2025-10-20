@@ -167,7 +167,14 @@ body {
     background-color:#968446;
     margin: 0.3rem auto;
     border-radius: 2px;
-    opacity: 0.8;
+    opacity: 0;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+  }
+  body.loaded .underline {
+    opacity: 1;
+    transform: scaleX(1);
   }
   .nav-menu {
     position: relative;
