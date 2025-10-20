@@ -156,6 +156,17 @@ body {
     top: 0;
     transform: none;
     margin-bottom: 0.6rem;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .underline {
+    width: 100%;
+    max-width: fit-content;
+    height: 2px;
+    background-color:#968446;
+    margin: 0.3rem auto;
   }
   .nav-menu {
     position: relative;
