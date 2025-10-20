@@ -1,6 +1,12 @@
 @font-face {
   font-family: PlusJakarta;
   src: url(PlusJakartaSans-VariableFont_wght.ttf);
+
+  :root {
+    --light-green: #2a654f;
+    --dark-green: #133f1c;
+    --gold: #968446;
+  }
 }
 html {
   -webkit-font-smoothing: antialiased;
@@ -10,13 +16,14 @@ html {
 
 /* Top Banner (Top Banner) */
 .topbanner {
-  background-color: #133f1c;
-  padding: 20px;
+  background-color: #2a654f;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: space-between;
   position: relative;
   color: white;
+  flex-direction: column;
+  height: 160px;
 }
 
 /* Badge Fixed to the left*/
@@ -28,12 +35,13 @@ html {
 }
 
 .badge {
-  width: 70px;
+  width: 100px;
   height: auto;
 }
 
 /* Text Block */
 .title-box {text-align: center;
+  width: 100%;
 }
 
 /* Main Title */
@@ -54,19 +62,50 @@ html {
   font-weight: 400;
   opacity: 0.85;
   font-size: 0.95rem;
-  margin-top: -6px;
+  margin-top: 5px;
   line-height: 1;
   position: relative;
   top: -2px;
 }
 
-/* Gold Underline Under EST.2026 */
+/* Gold Underline Title */
 .underline {
   width: 475px;
   height: 2px;
   background-color: #968446;
-  margin: 0 auto 10px;
+  margin: 0.05rem auto;
   border-radius: 2px;
+  opacity: 0.75;
+
+}
+
+/* Nav Menu */
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: auto;
+  background-color: #133f1c;
+  bottom: 0;
+  position: absolute;
+  left: 0;
+  width: 100%;
+
+}
+
+.nav-menu a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: PlusJakarta, sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.25s ease;
+}
+
+.nav-menu a:hover {
+  color: #968446;
 }
 body {
   background: rgb(255, 255, 255);
