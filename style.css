@@ -162,11 +162,12 @@ body {
     flex-direction: column;
   }
   .underline {
-    width: 100%;
-    max-width: fit-content;
+    width: 65%;
     height: 2px;
     background-color:#968446;
     margin: 0.3rem auto;
+    border-radius: 2px;
+    opacity: 0.8;
   }
   .nav-menu {
     position: relative;
